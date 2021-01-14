@@ -1,0 +1,19 @@
+{
+  "name": "restauracja-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run-server": "node ./www"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.17.1",
+    "cookie-parser": "1.4.5",
+    "body-parser": "1.19.0",
+    "path": "0.12.7",
+    "uid-safe": "2.1.5"
+  }
+}
