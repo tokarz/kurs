@@ -1,0 +1,7 @@
+Siema, zadanka sa podzielone na Lekcje i tematy.
+W plikach tekstowych sa zadanka - od myslnika podstawowe, trudniejsze z gwiazdka
+W kazdym katalogu z lekcja jest katalog Wasze_kody, tam zrobcie swoje foldery i w nich wrzucajcie kod jak chcecie 
+(albo wszystko w 1 pliku albo plik na zadanko jak wam wygodniej)
+
+W razie pytan piszcie:)
+

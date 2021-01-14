@@ -1,0 +1,8 @@
+- Napisz Program, ktory 100 razy wypisze "Hello World"
+- Napisz Program, ktory wyswietli wszystkie elementy tablicy (dowolnie zdefiniowanej)
+- Napisz program, ktory wyliczy sume wszystkich elementow tablicy [99,98,97,96]
+- Napisz program, ktory zsumuje 2 tablice i zwroci tablice sum na kazdej pozycji [1,2,3], [3,2,1] powinno zwrocic [4,4,4]
+- Napisz program, ktory wyswietli tylko parzyste liczby z tablicy od 1 do 100 (parzyste elementy sprawdza sie if(x%2 == 0)
+- Napisz Program, ktory wyswietli elementy tablicy [1,2,3,4,5] od przodu i od tylu
+* Napisz Program, ktory znajdzie najwieksza liczbe w tablicy liczb - [1,2,4,11,8,9] -> ma zwrocic 11
+* Napisz Program, ktory posortuje tablice : [1,5,6,7,2,4] ma zwrocic [1,2,4,5,6,7]
