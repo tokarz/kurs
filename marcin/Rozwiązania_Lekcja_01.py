@@ -10,9 +10,17 @@ for i in tab1:
     print(i)
 
 print('######################################################################')
+
 #suma 
 tab2= [99,98,97,96]
 print(sum(tab2))
+#lub
+tab_2=[99,98,97,96]
+suma=0
+for liczba in tab_2:
+    suma=suma+liczba
+print(suma)
+
 
 print('######################################################################')
 #suma pionowo w osobnej tablicy
@@ -49,21 +57,20 @@ for i in tab:
     print(tab[index])
     index=index-1
 
-
 print('######################################################################') 
 #największy element
 List_01 = [1,2,4,11,8,9]
 print(max(List_01))
+#lub
+List_01 = [1,2,4,11,8,9]
+
+maks=0
+for liczba in List_01:
+    if maks < liczba: 
+        maks=liczba  
+print(maks)        
 
 print('######################################################################')
 #sortowanie
 List_02 = [1,5,6,7,2,4]
 print(sorted(List_02))
-
-
-
-
-
-
-
-

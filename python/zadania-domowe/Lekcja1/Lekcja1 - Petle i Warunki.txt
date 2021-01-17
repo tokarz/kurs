@@ -1,4 +1,4 @@
-- Napisz Program, ktory 100 razy wypisze "Hello World"
+tab- Napisz Program, ktory 100 razy wypisze "Hello World"
 - Napisz Program, ktory wyswietli wszystkie elementy tablicy (dowolnie zdefiniowanej)
 - Napisz program, ktory wyliczy sume wszystkich elementow tablicy [99,98,97,96]
 - Napisz program, ktory zsumuje 2 tablice i zwroci tablice sum na kazdej pozycji [1,2,3], [3,2,1] powinno zwrocic [4,4,4]
