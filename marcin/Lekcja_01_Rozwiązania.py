@@ -40,22 +40,25 @@ print(tabC)
 print('######################################################################')
 #wyswietl liczby parzyste
 for i in range(1,101):
+    
     if i %2 == 0:
         print(i,'is even' )
 
 
 print('######################################################################') 
+
 #wyświetl i w odwrotnej kolejności
 tab = [1,2,3,4]
-
-index =0
-for i in tab:
-    print(tab[index])
-    index=index+1
+# tab.reverse()
+# print(tab)
+#lub
+tab[::-1]
+print(tab)
+#lub
 index =3   
 for i in tab:
     print(tab[index])
-    index=index-1
+    index-=1
 
 print('######################################################################') 
 #największy element
@@ -74,3 +77,17 @@ print('######################################################################')
 #sortowanie
 List_02 = [1,5,6,7,2,4]
 print(sorted(List_02))
+#lub
+Lista = [1,5,6,7,2,4]
+n = len(Lista)
+
+while n > 1:
+
+    for l in range(0, n-1):
+        
+        if Lista[l] > Lista[l+1]:
+            Lista[l],Lista[l+1] = Lista[l+1],Lista[l]
+            
+    n=n-1
+    
+print(Lista)
