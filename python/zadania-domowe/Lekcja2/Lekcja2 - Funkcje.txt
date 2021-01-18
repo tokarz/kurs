@@ -1,1 +1,38 @@
+ - Napisz funkcje, ktora zwraca Hello + imie, ktore jest parametrem funkcji - np mojaFunckja('Maciek') -> 'Hello, Maciek'
+ - Napisz funkcje, ktora zwraca liczbe calkowita, bedaca suma dwoch liczb podanych w argumentach : suma(1,3) -> 4
+ - Napisz funkcje, ktora zwraca liczbe calkowita, bedaca iloczynem dwoch liczb podanych w argumentach : pomnoz(2,3) -> 6
+ - Napisz funkcje, ktora zwraca liczbe calkowita, bedaca ilorazem dwoch liczb podanych w argumentach : podziel(6,3) -> 2
+ * Napisz fukncje, ktora wykorzystujac powyzsze 3 funkcja (suma, pomnoz, podziel) zwroci wynik dzialania :
+    obliczTo(a,b,c) -> 2*(a+b) / (a + b +c ) :)
+ - Napisz funkcje, ktora zwroci najwyzsza liczbe z podanej jej tablicy -> findMax([1,2,3,4]) -> 4
+ - Napisz funkcje, ktora zwroci sume dwoch tablic w parametrach addMatrix([1,2,3], [3,2,1]) -> [4,4,4] 
+   (mozecie korzystac z kodu z zadania 1)
+ * Napisz funkcje 3 funckje - zrobZupe(), zrob2Danie(), zrobDeser(). Niech kazda z nich zwraca jakis string jaka to zupa - dowolnie
+	Potem napisz funkcje zrobObiad('zupa', '2danie', 'deser') ktora zrobi wszystkie 3 dania (wywola wszystkie funkcje).
+	Jesli ktos nie chce jest zupy, moze wywolac zrobObiad('2danie', 'deser'), wtedy zrobZupe nie powinna byc wywolana
+	
+ - Napisz funkcje, ktora przyjmuje obiekt (slownik - {imie: 'Jan', nazwisko: 'Kowalski', plec: 'reptilianin'})
+   i Wypisze przywitanie dla kazdego pola obiektu (dowolnie jak chcecie), np
+   welcome({imie: 'Jan', nazwisko: 'Kowalski', plec: 'reptilianin'}) -> 'Witaj Jan Kowalski, toaleta dla reptilianin jest na 2 pietrze'
+   
+   
+   
+   
+   ------- Hardcory, wchodzic na wlasna odpowiedzialnosc :) -----------
  
+ * Kantor - napisz funkcje, ktora przeliczy nam kurs 2 walut. Powinna miec takie API : cinkciarz('20zl', 'euro') -> i zwrocic ile to jest euro (jako string)
+   Przeliczniki walut mozecie przyjac jakie chcecie (np Dolar -3.5, Euro 4 itd). Gdy wywolam funkcje :
+   cinkciarz('waluty') -> powinien zwrocic mi stringa ze wszystkimi dostepnymi walutami i ich przelicznikami wzgledem zlotowki:
+   
+   'USD', '3.5zl', 'dolar amerykanski'
+   'EU', '4zl', 'Euro'
+   'KHR', '0,46', 'Dolar Kambodzanski'
+   
+   itd.
+   
+   ** na 6 z gwiazdka -> stworzcie plik "waluty.txt" w ktorym dostepne beda waluty i funkcja bedzie je wczytywac z pliku
+ 
+ 
+ ** napisz funkcje ktora wyswietli kolejne liczby ciagu Fibonacciego - ciag ktorego kolejna liczba jest suma dwoch poprzednich
+ Ciag - 1,1,2,3,5,8,13,21....
+ (https://pl.wikipedia.org/wiki/Ci%C4%85g_Fibonacciego)
