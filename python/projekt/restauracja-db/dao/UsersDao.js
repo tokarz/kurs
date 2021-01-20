@@ -12,7 +12,7 @@ class UserDao {
         });
         await client.connect();
 
-        const res = await client.query('SELECT * from public."Users"');
+        const res = await client.query(`SELECT * from public."Users" where "Email"='${username}' and "Password"='${password}'`);
         await client.end();
 
         return res.rows[0];

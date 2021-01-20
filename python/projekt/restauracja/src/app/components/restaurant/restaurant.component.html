@@ -1,54 +1,85 @@
 <div class="d-flex" id="wrapper">
 
-  <!-- Sidebar -->
-  <div class="bg-light border-right" id="sidebar-wrapper">
-    <div class="sidebar-heading">Tydzień </div>
-    <div class="list-group list-group-flush">
-      <a class="list-group-item list-group-item-action bg-light">Poniedziałek</a>
-      <a class="list-group-item list-group-item-action bg-light">Wtorek</a>
-      <a class="list-group-item list-group-item-action bg-light">Środa</a>
-      <a class="list-group-item list-group-item-action bg-light">Czwartek</a>
-      <a class="list-group-item list-group-item-action bg-light">Piątek</a>
-      <a class="list-group-item list-group-item-action bg-light">Sobota</a>
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading">
+            <fa-icon [hidden]="weekNumber < 2" (click)="goToWeek('prev')" [icon]="faPreviousWeek"></fa-icon>
+            Week {{weekNumber}}
+            <fa-icon [hidden]="weekNumber > 51" (click)="goToWeek('next')" [icon]="faNextWeek"></fa-icon>
+        </div>
+        <div class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action bg-light">Monday</a>
+            <a class="list-group-item list-group-item-action bg-light">Tuesday</a>
+            <a class="list-group-item list-group-item-action bg-light">Wednesday</a>
+            <a class="list-group-item list-group-item-action bg-light">Thursday</a>
+            <a class="list-group-item list-group-item-action bg-light">Friday</a>
+            <a class="list-group-item list-group-item-action bg-light">Saturday</a>
+        </div>
     </div>
-  </div>
-  <!-- /#sidebar-wrapper -->
+    <!-- /#sidebar-wrapper -->
 
-  <!-- Page Content -->
-  <div id="page-content-wrapper">
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" style="height: 105px">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" style="height: 125px">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" (click)="logout()">Wyloguj <span class="sr-only">(current)</span></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" (click)="logout()">Logout <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    <div class="container-fluid" style="height: calc(100% - 105px);background: whitesmoke;">
-        <div class="row h-50">
-            <div class="col-md-12 container-fluid">
-                <div class="row  h-100">
-                    <div class="offset-md-2 col-md-4" style="box-shadow: 0 0 2px black;" >AA</div>
-                    <div class="col-md-4">AB</div>
+        <div class="container-fluid" style="height: calc(100% - 150px);background: whitesmoke;">
+            <div class="row h-50">
+                <div class="col-md-12 container-fluid">
+                    <div class="row  h-100">
+                        <div class="offset-md-2 col-md-4 icons-wrapper">
+                            <div>
+                                <fa-icon class="addOrder" [icon]="addOrder"></fa-icon>
+                                <h2>Add Order</h2>
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 icons-wrapper">
+                            <div>
+                                <fa-icon class="removeOrder" [icon]="removeOrder"></fa-icon>
+                                <h2>Remove Order</h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="row h-50">
+                <app-orders-table [rows]="rows"></app-orders-table>
+            </div>
         </div>
-        <div class="row h-50">
-            <div class="col-md-12 h-50">B</div>
-        </div>
-
-        
-        
     </div>
-  </div>
+</div>
 
 
+<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 </div>

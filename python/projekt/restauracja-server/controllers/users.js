@@ -4,10 +4,15 @@ var router = express.Router();
 const userDao = require('../../restauracja-db/dao/UsersDao');
 
 /* GET users listing. */
-router.get('/', function (req, res, next) {
-  userDao.get('username', 'password').then(user => {
-    res.json({ users: [{ name: user }] });
-  });
+router.get('/', function(req, res, next) {
+    console.log(`Request received ${JSON.stringify(req.query)}`);
+
+    const userName = req.query.username;
+    const password = req.query.password;
+
+    userDao.get(userName, password).then(user => {
+        res.json({ users: [{ name: user }] });
+    });
 
 });
 
