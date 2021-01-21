@@ -1,0 +1,10 @@
+1) Podaj różnicę między Tuplem a Listą
+2) Podaj różnicę między Listą a Array
+3) co to jest __init__
+4) co w pytonie oznacza self
+5) jak działa break i continue
+6) co robi polecenie [::-1]
+7) jak pisze się komentarze w pythonie? jedno i wielolinijkowe?
+8) co to jest klasa i obiekt?
+9) czym jest dziedziczenie w klasach?
+10) czym w pythonie są moduły?
