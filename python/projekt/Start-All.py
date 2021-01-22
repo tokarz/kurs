@@ -1,15 +1,15 @@
 import os,sys
 import subprocess
 
-#os.chdir('restauracja');
-#os.system('npm install')
+os.chdir('restauracja');
+os.system('npm install')
 
-#os.chdir('../restauracja-db');
-#os.system('npm install')
+os.chdir('../restauracja-db');
+os.system('npm install')
 
-#os.chdir('../restauracja-server');
+os.chdir('../restauracja-server');
 
-#os.system('npm install')
+os.system('npm install')
 
 os.chdir('./restauracja-server')
 serverFile = subprocess.Popen('node www')
@@ -25,5 +25,3 @@ while True:
     out = frontEndFile.stdout.read(1)
     if out == '' and frontEndFile.poll() != None:
         break
-    if out != '':
-        
