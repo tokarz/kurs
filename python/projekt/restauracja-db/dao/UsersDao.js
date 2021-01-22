@@ -6,7 +6,7 @@ class UserDao {
         const client = new Client({
             user: 'postgres',
             host: 'localhost',
-            database: 'restauracja',
+            database: 'restauracja2',
             password: 'admin',
             port: 5432,
         });
