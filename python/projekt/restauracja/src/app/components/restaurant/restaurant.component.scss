@@ -4,54 +4,92 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
 
- #wrapper {
+#wrapper {
     overflow-x: hidden;
- }
+}
 
 #sidebar-wrapper {
-  min-height: 100vh;
-  margin-left: -15rem;
-  -webkit-transition: margin .25s ease-out;
-  -moz-transition: margin .25s ease-out;
-  -o-transition: margin .25s ease-out;
-  transition: margin .25s ease-out;
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
 }
 
 #sidebar-wrapper .sidebar-heading {
-  padding: 0.875rem 1.25rem;
-  font-size: 1.2rem;
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 #sidebar-wrapper .list-group {
-  width: 15rem;
+    width: 15rem;
+    .list-group-item {
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 
 #page-content-wrapper {
-  min-width: 100vw;
+    min-width: 100vw;
 }
 
 #wrapper.toggled #sidebar-wrapper {
-  margin-left: 0;
+    margin-left: 0;
 }
 
 @media (min-width: 768px) {
-  #sidebar-wrapper {
-    margin-left: 0;
-  }
-
-  #page-content-wrapper {
-    min-width: 0;
-    width: 100%;
-  }
-
-  #wrapper.toggled #sidebar-wrapper {
-    margin-left: -15rem;
-  }
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
 }
 
 .nav-link {
     cursor: pointer;
-    &:hover{
+    &:hover {
         transform: scale(1.1);
+    }
+}
+
+.icons-wrapper {
+    display: flex;
+    justify-content: center;
+    >div {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px;
+        width: 300px;
+        box-shadow: 0 0 2px black;
+        background: white;
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 0 3px black;
+            >fa-icon.removeOrder {
+                color: darkred;
+            }
+            >fa-icon.addOrder {
+                color: green;
+            }
+        }
+        >fa-icon {
+            justify-content: center;
+            text-align: center;
+            font-size: 50px;
+        }
+        >h2 {
+            text-align: center;
+        }
     }
 }
