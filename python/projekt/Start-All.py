@@ -25,6 +25,9 @@ while True:
     out = frontEndFile.stdout.read(1)
     if out == '' and frontEndFile.poll() != None:
         break
+<<<<<<< HEAD
+=======
 
 
         
+>>>>>>> 7e96db579286762f567f9ba067f20e827e87a565

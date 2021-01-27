@@ -3,6 +3,13 @@ const { Pool, Client } = require('pg');
 class UserDao {
 
     async get(username, password) {
+<<<<<<< HEAD
+    return new Promise(resolve => {
+		
+		resolve([{name: 'dupa'}]);
+	})
+	}
+=======
         const client = new Client({
             user: 'postgres',
             host: 'localhost',
@@ -17,6 +24,7 @@ class UserDao {
 
         return res.rows[0];
     }
+>>>>>>> 7e96db579286762f567f9ba067f20e827e87a565
 
 }
 
