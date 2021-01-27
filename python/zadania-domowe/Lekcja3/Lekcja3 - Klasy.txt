@@ -1,0 +1,20 @@
+- Napisz klase Barman, ktora zawiera 3 metody - zrobKoktajl(self, *skladniki), podajRachunek(self, kwota), wezPieniadze(self, kwota)
+- Klasa Barman ma miec konstruktor ktory przyjmuje imie barmana 
+- Do klasy Barman dodaj metode rozpocznijZmiane() ktora ustawi pole w klasie wPracy na True
+- Do klasy Barman napisz metode czyDzisPracuje() ktora zwroci wartosc pola wPracy ustawionego powyzej
+- Napisz klase Bar ktora zawieta Liste Barmanow
+- Napisz metode zatrudnijBarmana(Barman) i zwolnijBarmana(barman)
+- zatrudnijBarmana powinna wpisac nowo podanego barmana do listy barmanow w klasie Bar
+- zwolnijBarmana powinna usunac barmana z listy barmanow w klasie bar
+- Klasa bar powinna miec Liste barmaniNaZmianie ktora ma okreslona dlugosc (np 3) i na poczatku byc pusta
+- Stworz plik Otworzbar, ktory stworzy Bar, zatrudni 3 barmanow i kazdemu z nich kaze zrobic koktajl
+
+*******Sekcja hard
+
+- w klasie Bar stworz metode otworzZmiane()
+- metoda niech pobiera do zmiennej imie barmana ktory zaczyna otworzZmiane
+- barman na zmianie powinien byc dodany do listy barmaniNaZmianie
+- barman powinien moc zrobic maksymalnie 3 koktajle zanim nie skonczy zmiany
+- gdy barman konczy zmiane, bezdusznie zwalniamy go z pracy (usuwamy z obu list Baru)
+- stworz 3 barmanow, zatrudnij kazdego z nich, zrob 3 koktajle i zwolnij kazdego z nich po 3 koktajlach
+- gdy barman zostaje zwolniony - lista koktajli ktore zrobil powinna zostac wpisana do pliku z jego imieniem (np. Maciek.txt)
