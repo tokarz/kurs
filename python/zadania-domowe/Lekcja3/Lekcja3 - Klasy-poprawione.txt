@@ -1,0 +1,38 @@
+- Stworz klase Komputer
+- Klasa Komputer powinna miec pola : procesor, RAM, rozmiarDysku
+- Klasa Komputer powinna miec metody wlacz(), wylacz(), wysunCD()
+
+- Stworz klase Owoc
+- Klasa owoc powinna miec jedna metode smak() zwracajaca string (np slodki, kwasny)
+- Stworz klase Cytryna ktora dziedziczy po klasie Owoc
+- Cytryna wywolujac smak() powinna zwrocic string "kwasny"
+- stworz klase Mango ktora dziedziczy po klasie Owoc
+- Mango wywolujac smak() powinna zwrocic string "slodki"
+- stworz instancje klas i wypisz smaki do konsoli
+
+
+- Stworz klase Auto
+- Klasa auto powinna miec metody: jedz(predkosc), stop(), zatrabKlaksonem(), wstawSilnik(Silnik)
+- Stworz klase Silnik 
+- Klasa Silnik powinna miec metody: start(), ustawBieg(), dodajGazu(), zahamuj()
+- Klasa Silnik powinna miec wlasciwosci (zmienne) - pojemnosc- liczba, iloscKoni - liczba, aktualnaPredkosc
+- Klasa auto powinna miec wlasciwosci (zmienne) - Silnik- klasa silnik, waga - liczba, VIN - string
+- Stworz klase Mazda ktora dziedziczy po klasie silnik
+- Klasa Mazda powinna miec 1 dodatkowa metode : wlaczTempomat(predkosc)
+
+- Stworz plik - Jazda.py ktory importuje klasy Auto i Silnik (lub jesli nie wiecie jak - wklejcie kod klas do tego pliku)
+- Stworzcie instancje Silnika (dowolna) i instancje klasy Auto
+- Stworzcie klase Auto (dowolnie) i ustawcie jej silnik stworzony powyzej wywolujac wstawSilnik
+- Gdy auto sie uruchamia (metoda start) jego silnik powinien sie uruchomic (klasa start)
+- Gdy auto wywola metode jedz, powinno przyspieszyc do wartosci parametru predkosc
+- Gdy auto wywola metode stop - silnik powinien zahamowac.
+
+* Stworz instancje klasy Mazda
+* Gdy Mazda wywola metode jedz, powinno przyspieszyc do wartosci parametru predkosc
+* Gdy Mazda wywola metode wlaczTempomat(predkosc) auto powinno przyspieszyc - przez dodajGazu do predkosci tempomatu
+* Gdy mazda wywola metode stop - silnik powinien zahamowac
+* Gdy mazda wywola po raz 2 jedz - predkosc powinna zostac zignorowana i auto powinno przyspieszyc do poprzedniej predkosci
+ustawionej przez wlaczTempomat(predkosc)
+
+
+
