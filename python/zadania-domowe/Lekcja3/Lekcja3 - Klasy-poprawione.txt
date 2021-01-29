@@ -12,7 +12,7 @@
 
 
 - Stworz klase Auto
-- Klasa auto powinna miec metody: jedz(predkosc), stop(), zatrabKlaksonem(), wstawSilnik(Silnik)
+- Klasa auto powinna miec metody: jedz(predkosc), stop(), zatrabKlaksonem(), wstawSilnik(Silnik), wlaczAuto()
 - Stworz klase Silnik 
 - Klasa Silnik powinna miec metody: start(), ustawBieg(), dodajGazu(), zahamuj()
 - Klasa Silnik powinna miec wlasciwosci (zmienne) - pojemnosc- liczba, iloscKoni - liczba, aktualnaPredkosc
@@ -22,7 +22,7 @@
 
 - Stworz plik - Jazda.py ktory importuje klasy Auto i Silnik (lub jesli nie wiecie jak - wklejcie kod klas do tego pliku)
 - Stworzcie instancje Silnika (dowolna) i instancje klasy Auto
-- Stworzcie klase Auto (dowolnie) i ustawcie jej silnik stworzony powyzej wywolujac wstawSilnik
+- Stworzcie obiekt Auto (dowolnie) i ustawcie jej silnik stworzony powyzej wywolujac wstawSilnik
 - Gdy auto sie uruchamia (metoda start) jego silnik powinien sie uruchomic (klasa start)
 - Gdy auto wywola metode jedz, powinno przyspieszyc do wartosci parametru predkosc
 - Gdy auto wywola metode stop - silnik powinien zahamowac.
