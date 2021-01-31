@@ -11,6 +11,7 @@ import { AgGridModule } from 'ag-grid-angular';
 import { ReservationPanelComponent } from './components/restaurant/reservation-panel/reservation-panel.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
+import { WeekChoiceBarComponent } from './components/week-choice-bar/week-choice-bar.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     OrdersTableComponent,
     ReservationPanelComponent,
+    WeekChoiceBarComponent,
   ],
   imports: [
     BrowserModule,

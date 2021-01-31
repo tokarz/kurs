@@ -1,32 +1,19 @@
 <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-        <div class="sidebar-heading">
-            <fa-icon [hidden]="weekNumber < 2" (click)="goToWeek('prev')" [icon]="faPreviousWeek"></fa-icon>
-            Week {{weekNumber}}
-            <fa-icon [hidden]="weekNumber > 51" (click)="goToWeek('next')" [icon]="faNextWeek"></fa-icon>
-        </div>
-        <div class="list-group list-group-flush">
-            <a class="list-group-item list-group-item-action bg-light">Monday</a>
-            <a class="list-group-item list-group-item-action bg-light">Tuesday</a>
-            <a class="list-group-item list-group-item-action bg-light">Wednesday</a>
-            <a class="list-group-item list-group-item-action bg-light">Thursday</a>
-            <a class="list-group-item list-group-item-action bg-light">Friday</a>
-            <a class="list-group-item list-group-item-action bg-light">Saturday</a>
-        </div>
+    <div class="bg-dark border-right" id="sidebar-wrapper">
+        <app-week-choice-bar [(selectedDate)]="selectedDate"></app-week-choice-bar>
     </div>
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
-
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" style="height: 125px">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <h2 class="">{{selectedDate?.weekDay}}</h2>
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
                         <a class="nav-link" (click)="logout()">Logout <span class="sr-only">(current)</span></a>

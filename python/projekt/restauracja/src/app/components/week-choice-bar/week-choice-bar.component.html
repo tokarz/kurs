@@ -1,0 +1,10 @@
+<div class="sidebar-heading">
+    <fa-icon [hidden]="weekNumber < 2" (click)="goToWeek('prev')" [icon]="faPreviousWeek"></fa-icon>
+    Week {{weekNumber}}
+    <fa-icon [hidden]="weekNumber > 51" (click)="goToWeek('next')" [icon]="faNextWeek"></fa-icon>
+</div>
+<div class="list-group list-group-flush">
+    <a [ngClass]="{'day-selected': selectedDate?.weekDay === day.weekDay}" class="list-group-item list-group-item-action bg-dark" *ngFor="let day of weekDays | async" (click)="selectDate(day.weekDay, day.weekDayNumber)">
+        {{day.weekDay}}
+    </a>
+</div>
