@@ -1,0 +1,61 @@
+- Napisz klasę bazową Person z polami
+	- Name
+	- Clasification
+	- LifePoints
+	- Armor
+	- Speed
+	- HitPoints
+	
+i konstruktorem który ustawia te pola
+	
+- Napisz klasę pochodną Wizard która dziedziczy po Person która dodatkowo ma pola:
+	- Magic
+	
+	- MagicBonus
+	
+- Napisz klasę pochodną Warrior która dziedziczy po Person która dodatkowo ma pola
+	- HitPoints
+	- MagicResistance
+	
+
+- niech każda klasa pochodna uruchamia konstruktor klasy bazowej z wartościami:
+	Wizard  -> Name - "Black Wizard", Classification - "Wizard", LifePoints - 100, Armor - 20, Speed - 20
+	Warrior -> Name - "Sir Lancelot", Classification - "Warrior", LifePoints - 300, - Armor - 100, Speed -5
+
+- w swoim konstruktorze dodatkowo niech każda postać ustawi sobie swoje statystyki
+	Wizard -> Magic - 100, HitPoints - 20, MagicBonus - 5
+	Warrior -> HitPoints - 150, MagicResistance - 30
+	
+
+- do klasy bazowej dodaj funkcję Attack(attackValue, Person)
+- niech działa ona w następujący sposób:
+	instancja klasy Wizard może wywołać funkcję na przecinwiku:
+		wizard = Wizard(...)
+		warrior = Warrior(...)
+		
+		(mój)wizard.Attack(100, (jego)warrior)
+		warrior.Attack(50, wizard)
+		
+wartość ataku każdego 1 osoby na drugią wyraża wzór: moje HitPoints * ewentualnie MagicBonus (jeśli go mam) 
+
+Czyli jeśli mój wizard ma HitPoints - 20, MagicBonus - 5 to atakuję go z siłą 100
+
+Atakowana osoba najpierw odejmuje sobie siłę ataku z Armora a później dopiero z LifePoints
+
+Czyli jeżeli mój atakowany wizard ma armor 20 i LifePoints 100 to po 1 ataku powinien mieć Armor 0 i LifePoints 20
+(bo odjęliśmy od LifePoints + Armor 100 a miał Armor 20 + LP 100 czyli 120 - 100 = 20)
+Jeżeli atakowana osoba jest przez Wizzarda i ma MagicResistance to siła ataku zmniejsza się o MagicResistance
+
+Napiszcie funkcję w której wizard i warrior walczą ze sobą na zmianę (najpierw wizard atakuje warriora potem warrior wizarda)
+i walczą aż któryś z nich nie zignie
+
+Pobaw się wartościami w konstruktorach i zobacz kto kiedy wygra walkę:)
+
+Dla ambitnych:
+Wykorzystaj pole Speed by zadecydować która postać atakuje częściej. Pomyśl jak można by to zrobić by zasymulować taki atak
+
+
+
+
+	
+	

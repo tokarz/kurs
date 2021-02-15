@@ -1,0 +1,18 @@
+--- powtorka podstaw ---
+- napisz funkcje hello(name) ktora zwroci stringa (uwaga - zwróci, nie wyświetli!) 'Hello ' + name
+- napisz funkcje ktora helloArray(*arr) (czyli przyjmie tablice) i zwroci napis ze wszystkich elementow tablicy jako 1 stringa
+np. hello(*['I', 'Am', 'Your', 'Father'] => 'I Am your Father' (zwróćcie uwagę, by między kawałki tekstów w tablicy wstawić spację)
+- wywołaj obie funkcje w taki sposób: hello('Luke' + helloArray(*['I', 'Am', 'Your', 'Father'])) - zobacz jak fajnie można łączyć wywołania
+funkcji i że można ich używać już w argumentach (jest to możliwe bo funkcje zwracają wartość a nie ją wyświetlają)
+- Spróbujcie użyć tych funkcji by napisać kilka tego typu tekstów
+- napisz funkcje, która zwróci największą liczbę z tablicy max(*[4,1,2,3]) => 4
+- *napisz funkcję która zwróci DRUGĄ największą liczbę z tablicy: secondMax(*[4,1,2,3]) => 3 (możesz użyć poprzedniej funkcji jako pomocy)
+
+*na 6
+---------- aplikacja Covid-19 -------------
+- napisz funkcje testCovid() ktora zwroci z 5% prawdopodobienstwem true i z 95% prawdopodobienstwem false
+ (wykorzystaj biblioteke random : https://www.w3schools.com/python/ref_random_randint.asp)
+- napisz funkcję cov_population(n)która odpali się n razy i wyświetl ilość osób chorych na covid
+np cov_population(10) - 10 razy, cov_population(100000) - 100 tys razy
+-porównaj wyniki
+
