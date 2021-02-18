@@ -1,0 +1,74 @@
+---------------------------------------------Trochę teorii o * z wczoraj-------------------------------------------------
+
+Odnośnie operatora * :
+https://www.tutorialspoint.com/What-does-the-Star-operator-mean-in-Python
+
+czyli:
+	- dla liczb * oznacza mnozenie : a*b
+	- dla "sekwencji" czyli list, tupli i stringów * jest operatorem powtarzania:
+		jakisNapis = 'Hello'; jakisNapis*3 -> 'HelloHelloHello'
+		jakasTablica = [1,2,3]; jakasTablica*3 -> [1,2,3,1,2,3,1,2,3]
+	- dla argumentu funkcji oznacza ze będziemy mieć dynamiczną ilość argumentów w funkcji i jest przekazywany jako tuple
+	def jakasFunkcja(*args) -> oznacza ze mozemy wywolac ja tak jakasFunkcja('jakis argument jako string')
+							   a mozemy tez tak jakasFunckja('argument1', 'argument2')
+							   
+	- jest tez cos takiego jak wyrazenie gwiazdkowe (starred expression) ktore rozpakowuje element 
+	przez rozpakowanie rozumiemy to ze typ [1,2,3,4] rozpakowuje sie (upraszcza) do prostszego, czyli zwyklego stringa
+	wiecej tutaj: http://yaoyao.codes/python/2016/09/25/python-starred-expression
+	
+Konkluzja: nie używajcie w funkcjach * jeśli chodzi o tablice tylko, jeśli funckja ma mieć nieokreśloną liczbę parametrów
+
+---------------------------------------------Zadanka----------------------------------------------------------------------
+
+1) napisz funkcję która  przyjmuje 2 argumenty a i b i zwraca wynik a do potęgi b, czyli:
+	pow(2,2) => 4, pow(2,3) => 8 pow(3,2) =>9 pow(3,3) => 27 (zakładamy że 2 argument musi być >=1)
+	napiszcie to najlepiej swoim algorytmem a nie z wykorzystaniem gotowych bibliotek:)
+	
+2) napisz funkcję, która ma nieokreśloną liczbę parametrów -> def foo(*args) i zwróci sumę wszystkich parametrów np:
+	foo(1) -> 1; foo(1,2) -> 3; foo(1,2,3,4) => 10
+	
+3) napisz funkcję która z podanego stringa zwróci każde słowo w tablicy po spacji:
+	def divide(jakiesZdanie) -> divide('Ala ma kota') -> ['Ala', 'ma', 'kota']
+	
+	
+4) napisz funkcję która jako argument przyjmie słownik i zwróci wszystkie jego klucze w tablicy
+	def unpack(dictionary) -> unpack({"a": "Cośtam}, {"b: "Cośtam innego"}) -> [a,b]
+	*dodaj 2 parametr do tej funkcji typu bool który zdecyduje czy zwracamy klucze słownika czy wartości
+	unpack({"a": "Cośtam}, {"b: "Cośtam innego"}, True) -> [a,b];
+	unpack({"a": "Cośtam}, {"b: "Cośtam innego"}, False) -> ["Cośtam", "Cośtam innego"]
+	
+5) napisz funkcję, która posortuje elementy w tablicy w zależności od 2 parametru który przyjmuje 2 stringi: 'asc', 'desc'
+	czyli ascending -> rosnąco, descending -> malejąco czyli def sort(arr, direction)
+	sort([1,2,3], 'asc') -> [1,2,3]; sort([3,2,1], 'asc') -> [1,2,3]; sort([1,2,3], 'desc') -> [3,2,1], sort([3,2,1], 'desc') -> [3,2,1]
+	
+
+6) napisz funkcję która odwróci tablicę kolejnością def reverse[arr]
+	czyli reverse[1,2,3,5,2] -> [2,5,3,2,1]. Postaraj się to zrobić własnym algorytmem a nie biblioteką
+	
+7) Zadanie otwarte:
+	Klient ma taki problem: dostaje raz w miesiącu od urzędu podatkowego listy w formie klucz wartość:
+	
+	
+	Imię: 				Kowalski,
+	Nazwisko: 			Jan,
+	Wiek:				39,
+	Płeć:				Niebinarna
+	Zawód:				Historyk porno,
+	Zaległy podatek:	1200zł
+	
+	- chciałby móc zebrać listy z całego roku (12 listów) i policzyć ile ma zapłacić podaktu za cały rok
+	- chciałby móc dostać to podsumowanie w formie:
+	Imię: 				Kowalski,
+	Nazwisko: 			Jan,
+	Wiek:				39,
+	Płeć:				Niebinarna
+	Zawód:				Historyk porno,
+	całkowity podatek:	14 400zł
+	
+Zaproponuj jak mógłbyś mu swoim programem dostarczyć takie rozwiązanie	
+	
+	
+
+	
+
+	
